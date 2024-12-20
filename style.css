@@ -1,0 +1,492 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2.0;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+@font-face {
+    font-family: "Willona";
+    src: url(webfontkit/willona_0-webfont.woff) format(woff);
+    src: url(webfontkit/willona_0-webfont.woff2) format(woff2);
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.logo {
+    height: 16vh;
+    width: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+
+.categories button {
+    height: 45px;
+    width: 280px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background: linear-gradient(90deg, #b2cfde87, #A38577);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.categories button:hover {
+    background: linear-gradient(90deg, #A38577, #793d24b4);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #b3d3de7c;
+}
+
+.parallax-header {
+    background: url('images/coffee_parallax.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+    font-size: large;
+}
+
+.parallax-header .header-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    width: 2000px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2em;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.menu-section {
+    padding: 40px;
+    background-color: #151515;
+}
+
+.location-selector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 30px;
+}
+
+.location-selector button {
+    height: 60px;
+    width: 320px;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    background: linear-gradient(90deg, #b2cfde87, #A38577);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-seri
+}
+
+.location-selector button:hover {
+    background: linear-gradient(90deg, #A38577, #793d24b4);
+    transform: scale(1.05);
+    box-shadow: 0 0 30px #b3d3de7c;
+}
+
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.menu-item {
+    background: #151515;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.2s;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.menu-item h4 {
+    margin: 10px 0;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    font-size: 1.1em;
+}
+
+.available {
+    color: green;
+}
+
+.unavailable {
+    color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+#additions {
+    background-color: #151515;
+    padding: 40px;
+    text-align: center;
+    line-height: 20px;
+}
+
+#additions h2 {
+    margin-bottom: 35px;
+}
+
+.vetka {
+    height: 60px;
+    margin-bottom: 20px
+}
+
+#about {
+    background-color: #eeeeee14;
+    padding: 20px;
+    text-align: center;
+}
+
+#about h2 {
+    font-family: "Willona";
+    font-size: 4em;
+    font-weight: normal;
+    background: linear-gradient(500deg, #46c1ff, #ae6028);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.contacts-section {
+    background-color: #151515;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.contacts-section h2 {
+    font-size: 4em;
+    color: #ffffff;
+    margin-bottom: 1px;
+    font-family: "willona";
+    font-weight: normal;
+    background: linear-gradient(90deg, #6fccfa, #db7c50);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.contacts-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+
+.maps {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.contacts-list-container {
+    width: 40%;
+    text-align: center;
+    padding-right: 200px;
+    padding-top: 8px;
+}
+
+.contacts-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contacts-list li {
+    font-size: 1.5em;
+    margin: 20px 0;
+    line-height: 1.8;
+    color: #e0e0e0;
+}
+
+.subtitle {
+    font-size: 1.7em;
+    margin-bottom: 8px;
+    color: #f4f4f4;
+}
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+iframe {
+    width: 47vw;
+    height: 25vw;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(182, 182, 182, 0.356);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #1b1b1b;
+}
+
+.grain {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+    transform: translateZ(0);
+}
+
+.grain1 {
+    top: 10%;
+    left: 15%;
+    animation: parallax 10s infinite linear;
+}
+
+.grain2 {
+    top: 50%;
+    right: 20%;
+    animation: parallax 15s infinite linear reverse;
+}
+
+@keyframes parallax {
+    0% {
+        transform: translateY(-10px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.fade-text {
+    display: inline-block;
+    animation: fadeInOut 7s ease-in-out infinite;
+}
+
+@keyframes fadeInOut {
+    0%, 20% {
+        opacity: 1;
+    }
+    40%, 60% {
+        opacity: 0;
+    }
+    80%, 100% {
+        opacity: 1;
+    }
+}
+
+.menu-title {
+    background: linear-gradient(90deg, #6fccfa, #db7c50);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.9em;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.menu-turtle {
+    background: linear-gradient(90deg, #6fccfa, #db7c50);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 4em;
+    font-family: "willona";
+    font-weight: normal;
+    text-align: center; 
+}
+
+@media (max-width: 1024px) {
+    .parallax-header {
+        height: 70vh;
+        font-size: medium;
+    }
+
+    .parallax-header .header-content {
+        width: 90%;
+        padding: 10px;
+    }
+
+    nav a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    .location-selector button,
+    .categories button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contacts-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .maps iframe {
+        width: 90vw;
+        height: 50vw;
+    }
+
+    .contacts-list-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contacts-list li {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 768px) {
+
+    h1, h2, h3, h4 {
+        font-size: 1.5em;
+    }
+
+    .parallax-header {
+        height: 50vh;
+    }
+
+    .menu-section, #about, #additions, .contacts-section {
+        padding: 20px;
+    }
+
+    .menu-item {
+        padding: 10px;
+    }
+
+    .logo {
+        height: 7vh;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .parallax-header {
+        height: 40vh;
+    }
+
+    .parallax-header .header-content {
+        padding: 5px;
+    }
+
+    .menu-item h4, .menu-item p {
+        font-size: 0.9em;
+    }
+
+    .contacts-section h2 {
+        font-size: 3.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .grain {
+        position: fixed;
+        width: 30px;
+    }
+
+    .grain1 {
+        top: 10%;
+        left: 5%;
+    }
+
+    .grain2 {
+        top: 80%;
+        right: 5%;
+    }
+}
+
+#caffeplants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+#caffeplants img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
