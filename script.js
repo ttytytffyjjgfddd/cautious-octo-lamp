@@ -77,7 +77,7 @@ window.addEventListener('scroll', function () {
     function changeAboutText() {
         const aboutTextElement = document.getElementById("about-text");
 
-        // Сменить текст в момент, когда он полностью скрыт
+        // зміна тексту в моменті, коли він повністю зник
         setTimeout(() => {
             currentIndex = (currentIndex + 1) % aboutTexts.length;
             aboutTextElement.textContent = aboutTexts[currentIndex];
