@@ -12,7 +12,10 @@ body {
     src: url(webfontkit/willona_0-webfont.woff2) format(woff2);
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
     text-align: center;
@@ -317,9 +320,11 @@ footer {
     0% {
         transform: translateY(-10px);
     }
+
     50% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -331,13 +336,19 @@ footer {
 }
 
 @keyframes fadeInOut {
-    0%, 20% {
+
+    0%,
+    20% {
         opacity: 1;
     }
-    40%, 60% {
+
+    40%,
+    60% {
         opacity: 0;
     }
-    80%, 100% {
+
+    80%,
+    100% {
         opacity: 1;
     }
 }
@@ -358,7 +369,7 @@ footer {
     font-size: 4em;
     font-family: "willona";
     font-weight: normal;
-    text-align: center; 
+    text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -409,7 +420,10 @@ footer {
 
 @media (max-width: 768px) {
 
-    h1, h2, h3, h4 {
+    h1,
+    h2,
+    h3,
+    h4 {
         font-size: 1.5em;
     }
 
@@ -417,7 +431,10 @@ footer {
         height: 50vh;
     }
 
-    .menu-section, #about, #additions, .contacts-section {
+    .menu-section,
+    #about,
+    #additions,
+    .contacts-section {
         padding: 20px;
     }
 
@@ -449,7 +466,8 @@ footer {
         padding: 5px;
     }
 
-    .menu-item h4, .menu-item p {
+    .menu-item h4,
+    .menu-item p {
         font-size: 0.9em;
     }
 

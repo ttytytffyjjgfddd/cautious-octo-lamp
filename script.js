@@ -21,7 +21,7 @@ if (typeof module !== 'undefined' && module.exports) {
     module.exports = { showMenu, changeAboutText };
 }
 
-// анімація кнопок навігації
+// анімація кнопок навігації документация документация докум
 const navLinks = document.querySelectorAll('nav a');
 navLinks.forEach(link => {
     link.addEventListener('click', function (event) {
@@ -65,27 +65,27 @@ window.addEventListener('scroll', function () {
     });
 });
 
-    const aboutTexts = [
-        "Ми створюємо каву з любов'ю! У наших кав'ярнях використовуються лише найкращі зерна, а кожен напій готується з турботою.",
-        "Наша кава володіє високими смаковими та ароматичними якостями, які дарують незабутнє задоволення.",
-        "У наших кав'ярнях панує затишна атмосфера, де кожен гість може відчути себе як вдома.",
-        "Ми пишаємося тим, що наші напої виготовляються з дотриманням найвищих стандартів якості."
-    ];
+const aboutTexts = [
+    "Ми створюємо каву з любов'ю! У наших кав'ярнях використовуються лише найкращі зерна, а кожен напій готується з турботою.",
+    "Наша кава володіє високими смаковими та ароматичними якостями, які дарують незабутнє задоволення.",
+    "У наших кав'ярнях панує затишна атмосфера, де кожен гість може відчути себе як вдома.",
+    "Ми пишаємося тим, що наші напої виготовляються з дотриманням найвищих стандартів якості."
+];
 
-    let currentIndex = 0;
+let currentIndex = 0;
 
-    function changeAboutText() {
-        const aboutTextElement = document.getElementById("about-text");
+function changeAboutText() {
+    const aboutTextElement = document.getElementById("about-text");
 
-        // зміна тексту в моменті, коли він повністю зник
-        setTimeout(() => {
-            currentIndex = (currentIndex + 1) % aboutTexts.length;
-            aboutTextElement.textContent = aboutTexts[currentIndex];
-        }, 2800); // час співпадає з фазою "opacity: 0" (40% ві д 7 секунд)
-    }
+    // зміна тексту в моменті, коли він повністю зник
+    setTimeout(() => {
+        currentIndex = (currentIndex + 1) % aboutTexts.length;
+        aboutTextElement.textContent = aboutTexts[currentIndex];
+    }, 2800); // час співпадає з фазою "opacity: 0" (40% ві д 7 секунд)
+}
 
-    // зміна тексту кожні 7 секунд
-    setInterval(changeAboutText, 7000);
+// зміна тексту кожні 7 секунд
+setInterval(changeAboutText, 7000);
 
 // показати категорії для обраної кав'ярні
 function showCategories(locationId) {
